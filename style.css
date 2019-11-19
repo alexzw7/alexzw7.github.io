@@ -1,0 +1,100 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image: url(background1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav 
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.main-nav li a:hover
+{
+    border: 0.5px solid white;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.hello
+{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.button
+{
+    margin-top: 40px;
+}
+
+.btn 
+{
+    border: .5px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btn-one
+{
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-one:hover
+{
+    background-color: slategray;
+    transition: all 0.75s ease-in;
+}
+
+.btn-two:hover
+{
+    background-color: slategray;
+    transition: all 0.75s ease-in;
+}
