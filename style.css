@@ -40,3 +40,8 @@ html { font-size: 1rem; }
     text-align: left;
     font-size: 21px;
 }
+
+h2
+{
+    margin: 20px;
+}
