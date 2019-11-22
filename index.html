@@ -1,31 +1,45 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Personal Website</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>Alex Wang</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     </head>
     <body>
-        <header>
-                <div class="row">
-                    <ul class="main-nav">
-                        <li><a href=""> Education </a></li>
-                        <li><a href=""> Projects </a></li>
-                        <li><a href=""> Skills </a></li>
-                        <li><a href=""> Contact </a></li>
+    <!--- Navbar --->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav"> 
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
                     </ul>
                 </div>
-
-                <div class="hello">
-                    <h1>Hi there! I'm Alex Wang</h1>
-                    <div style="text-align:center;">
-                        <div class="button">
-                            <a href="https://github.com/alexzw7" class="btn btn-one">Github</a>
-                            <a href="mailto:alexzw@umich.edu" class="btn btn-two">Email Me</a>
-                        </div>
-                    </div>
-                </div>
-
-        </header>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid" style="background-image: url(background1.jpg); background-size: cover; height: 100vh;">
+            <div class="container-fluid">
+                <h1 class="display-2 text-center text-white">Hi. I'm Alex Wang.</h1>
+            </div>
+        </div>
     </body>
 </html>
