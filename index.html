@@ -16,7 +16,7 @@
     </head>
     <body>
     <!--- Navbar --->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="mainNav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container-fluid">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -39,23 +39,23 @@
                 </div>
             </div>
         </nav>
-        <div class="jumbotron jumbotron-fluid" style="background-image: url(background1.jpg); background-size: cover; margin-bottom: 0;" id="jumbo">
+        <div class="jumbotron jumbotron-fluid" id="jumbo">
             <div class="container-fluid" style="visibility:hidden;" id="delayed">
                 <div class="image" style= "text-align: center;"> 
                     <img src="combined1.PNG" class="rounded-circle p-3" alt="Avatar">
                 </div>
                 <h1 class="display-2 text-center text-white">Hi. I'm Alex Wang:</h1>
-                <h2 class="display-5 text-center text-white">a passionate programmer, problem solver, and person living in Ann Arbor, MI.</h2>
+                <h2 class="display-5 text-center text-white" id="descrip">a passionate programmer, problem solver, and person living in Ann Arbor, MI.</h2>
                 <hr class="my-4 " width= "65%" style="background-color: white; text-align:center; margin: 0 auto; height: 2px;">
                 <div class="container-fluid" style="text-align: center; margin-top: 10vh; vertical-align: top;">
-                    <a href="https://github.com/alexzw7"><i class="fa fa-github" style="font-size:8vh;color:white;vertical-align: top;padding: 0 10vh;"></i></a>
-                    <a href="mailto:alexzw@umich.edu"><i class="material-icons" style="font-size:8vh;color:white;vertical-align: top;padding:0 10vh;">email</i></a>
+                    <a href="https://github.com/alexzw7"><i class="fa fa-github" style="font-size:8vh;color:white;vertical-align: top; margin-left: 30px;"></i></a>
+                    <a href="mailto:alexzw@umich.edu"><i class="material-icons" style="font-size:8vh;color:white;vertical-align: top; margin-left: 30px;">email</i></a>
                 </div>
             </div>
         </div>
         <!---Education-->
         <div class="container-fluid bg-dark">
-            <section class= "my-5 bg-dark text-white" style="padding-top:0px">
+            <section class= "my-0 bg-dark text-white" style="margin: 0px; vertical-align: top;"">
                 <h2 class="h1-responsive font-weight-bold my-5">Education</h2>
                 <p>Hi there</p>
             </section>
