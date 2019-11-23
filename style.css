@@ -45,3 +45,9 @@ h2
 {
     margin: 20px;
 }
+
+img 
+{
+    border-radius: 50%;
+    width: 35vh;
+}

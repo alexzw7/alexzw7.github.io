@@ -7,3 +7,4 @@ function backImage() {
 
 setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(blurred1.jpg)";},900);
 setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1500);
+
