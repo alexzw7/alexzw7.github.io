@@ -52,7 +52,8 @@ html { font-size: 1rem;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    height: 100vh; 
+    height: 100%; 
+    width: 100%;
     overflow: hidden;
     margin: 0;
 }
