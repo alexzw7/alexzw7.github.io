@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-html { font-size: 1rem; }
+html { font-size: 1rem;}
 
 @media (max-width: 575px) {
     html { font-size: .5rem; }
@@ -24,7 +24,6 @@ html { font-size: 1rem; }
 
 .navbar
 {
-    position: sticky;
     top: 0;
     z-index: 10;
     margin: 0px;
@@ -46,9 +45,9 @@ html { font-size: 1rem; }
     margin: 20px;
 }
 
-.jumbotron
+#jumbo
 {
-    background-image: url(background1.jpg) no-repeat center center fixed; 
+    background: url(background1.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,8 +63,17 @@ img
     width: 35vh;
 }
 
+p 
+{
+    margin-bottom: 0;
+}
+
 section
 {
-    margin: 0px;
+    padding: 15px 75px 15px 75px;
+}
 
+a
+{
+    text-decoration: none !important;
 }

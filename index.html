@@ -8,15 +8,15 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9dba17bb37.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="main.js"> </script>
 
     </head>
     <body>
     <!--- Navbar --->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="mainNav">
             <div class="container-fluid">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -24,16 +24,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav"> 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="">About Me</a>
+                            <a class="nav-link" href="#ABOUT">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Education</a>
+                            <a class="nav-link" href="#EDU">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Projects</a>
+                            <a class="nav-link" href="#PROJ">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Skills</a>
+                            <a class="nav-link" href="#SKILLS">Skills</a>
                         </li>
                     </ul>
                 </div>
@@ -48,16 +48,28 @@
                 <h2 class="display-5 text-center text-white" id="descrip">a passionate programmer, problem solver, and person living in Ann Arbor, MI.</h2>
                 <hr class="my-4 " width= "65%" style="background-color: white; text-align:center; margin: 0 auto; height: 2px;">
                 <div class="container-fluid" style="text-align: center; margin-top: 10vh; vertical-align: top;">
-                    <a href="https://github.com/alexzw7"><i class="fa fa-github" style="font-size:8vh;color:white;vertical-align: top; margin-left: 30px;"></i></a>
-                    <a href="mailto:alexzw@umich.edu"><i class="material-icons" style="font-size:8vh;color:white;vertical-align: top; margin-left: 30px;">email</i></a>
+                    <a href="https://github.com/alexzw7"><i class="fab fa-github" style="font-size:8vh;color:white;vertical-align: top; margin-left: 30px;"></i></a>
+                    <a href="mailto:alexzw@umich.edu"><i class="fas fa-envelope" style="font-size:8vh;color:white;vertical-align: top; margin-left: 30px;"></i></a>
                 </div>
             </div>
         </div>
         <!---Education-->
-        <div class="container-fluid bg-dark">
-            <section class= "my-0 bg-dark text-white" style="margin: 0px; vertical-align: top;"">
-                <h2 class="h1-responsive font-weight-bold my-5">Education</h2>
-                <p>Hi there</p>
+        <div class="container-fluid bg-dark"style="vertical-align: top; padding: 0;" id="MAINCONTAINER">
+            <div class = "shadow row-full" style="padding: 15px 0 15px 0; margin-bottom: 15px; text-align: center;">
+                <a href="javascript:changeMode();"><i class="fas fa-moon" style="font-size:4vh;color:white;" id="MODE"></i></a>                
+            </div>
+            <section class= "my-0 bg-dark text-white" style="margin: 0 250px 0 250px; vertical-align: top;" id="SUBCONTAINER">
+                <h2 class="h1-responsive font-weight-normal my-0" style="font-size: 35px; padding-top: 10px;" id="ABOUT">About Me</h2>
+                <hr class = "bg-white" id="SEP1">
+
+                <h2 class="h1-responsive font-weight-normal my-0" style="font-size: 35px;" id="EDU">Education</h2>
+                <hr class = "bg-white" id="SEP2">
+
+                <h2 class="h1-responsive font-weight-normal my-0" style="font-size: 35px;" id="PROJ">Projects</h2>
+                <hr class ="bg-white" id="SEP3">
+
+                <h2 class="h1-responsive font-weight-normal my-0" style="font-size: 35px;" id="SKILLS">Skills</h2>
+                <hr class = "bg-white" id="SEP4">
             </section>
         </div>
     </body>
