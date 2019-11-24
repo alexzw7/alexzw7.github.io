@@ -19,7 +19,7 @@ function changeMode() {
 
     if (main.className == "container-fluid bg-white") {
         main.className = "container-fluid bg-dark";
-        sub.className = "my-0 bg-dark text-white";
+        sub.className = "col-lg-6 col-md-6 col-sm-12 col-xs-12 my-0 bg-dark text-white";
         mode.style.color = "white";
         sep1.className = "bg-white";
         sep2.className = "bg-white";
@@ -28,7 +28,7 @@ function changeMode() {
     }
     else {
         main.className = "container-fluid bg-white";
-        sub.className = "my-0 bg-white text-black";
+        sub.className = "col-lg-6 col-md-6 col-sm-12 col-xs-12my-0 bg-white text-black";
         mode.style.color = "black";
         sep1.className = "bg-dark";
         sep2.className = "bg-dark";
