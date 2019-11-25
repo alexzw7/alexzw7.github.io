@@ -78,3 +78,9 @@ a
 {
     text-decoration: none !important;
 }
+
+p{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
