@@ -64,11 +64,6 @@ img
     width: 35vh;
 }
 
-p 
-{
-    margin-bottom: 0;
-}
-
 #SUBCONTAINER
 {
     padding: 25px;
@@ -81,7 +76,64 @@ a
 
 #ABOUTME
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-indent: 40px;
+}
+
+#UM
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#DEGREE
+{
+    padding-left: 40px;
+}
+
+#DELTA
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#DUAL
+{
+    padding-left: 40px;
+}
+
+#SASA
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#HIGH
+{
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+#LANGS
+{
+    margin: 0px;
+    padding: 15px 0px 5px 0px;
+}
+
+#LANGUAGES
+{
+    padding-left: 40px;
+}
+
+#SOFT
+{
+    margin: 0px;
+    padding: 15px 0px 5px 0px;
+}
+
+#TECH
+{
+    padding-left: 40px;
+    padding-bottom: 15px;
 }
