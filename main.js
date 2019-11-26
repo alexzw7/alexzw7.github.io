@@ -1,6 +1,24 @@
 setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(blurred1.jpg)";},900);
 setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1500);
 
+function offsetAnchor() {
+    if (location.hash.length !== 0) {
+      window.scrollTo(window.scrollX, window.scrollY - 75);
+    }
+  }
+  
+  // Captures click events of all <a> elements with href starting with #
+  $(document).on('click', 'a[href^="#"]', function(event) {
+    // Click events are captured before hashchanges. Timeout
+    // causes offsetAnchor to be called after the page jump.
+    window.setTimeout(function() {
+      offsetAnchor();
+    }, 0);
+  });
+  
+  // Set the offset when entering page with hash present in the url
+  window.setTimeout(offsetAnchor, 0);
+
 function changeMode() {
     var main = document.getElementById("MAINCONTAINER");
     var sub = document.getElementById("SUBCONTAINER");
