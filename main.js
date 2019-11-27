@@ -50,4 +50,3 @@ function changeMode() {
         sep4.className = "bg-dark";
     }
 }
-

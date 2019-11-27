@@ -6,7 +6,7 @@
 
 #jumbo
 {
-    background-image: url(background1.jpg);
+    background: url(background1.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
