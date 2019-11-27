@@ -4,6 +4,19 @@
     padding: 0;
 }
 
+#jumbo
+{
+    background: url(background1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
 html { font-size: 1rem;}
 
 @media (max-width: 575px) {
@@ -43,19 +56,6 @@ html { font-size: 1rem;}
 #descrip
 {
     margin: 20px;
-}
-
-#jumbo
-{
-    background: url(background1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    height: 100%; 
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
 }
 
 img 

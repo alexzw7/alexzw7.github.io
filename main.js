@@ -1,5 +1,5 @@
-setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(blurred1.jpg)";},900);
-setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1500);
+setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(blurred1.jpg)";},1000);
+setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1600);
 
 function offsetAnchor() {
     if (location.hash.length !== 0) {
