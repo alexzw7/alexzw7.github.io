@@ -1,4 +1,4 @@
-setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(blurred1.jpg)";},1000);
+setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(spaceblurred.jpg)";},1000);
 setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1600);
 
 function offsetAnchor() {
