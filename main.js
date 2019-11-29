@@ -1,23 +1,25 @@
-setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(spaceblurred.jpg)";},1000);
-setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1600);
+$(document).ready(function(){
+    setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(spaceblurred.jpg)";},1000);
+    setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1600);
+    // Set the offset when entering page with hash present in the url
+    window.setTimeout(offsetAnchor, 0);
+});
 
 function offsetAnchor() {
     if (location.hash.length !== 0) {
-      window.scrollTo(window.scrollX, window.scrollY - 75);
+        window.scrollTo(window.scrollX, window.scrollY - 75);
     }
-  }
+}
   
   // Captures click events of all <a> elements with href starting with #
-  $(document).on('click', 'a[href^="#"]', function(event) {
+$(document).on('click', 'a[href^="#"]', function(event) {
     // Click events are captured before hashchanges. Timeout
     // causes offsetAnchor to be called after the page jump.
     window.setTimeout(function() {
       offsetAnchor();
     }, 0);
-  });
+});
   
-  // Set the offset when entering page with hash present in the url
-  window.setTimeout(offsetAnchor, 0);
 
 function changeMode() {
     var main = document.getElementById("MAINCONTAINER");
