@@ -9,6 +9,11 @@ function offsetAnchor() {
     if (location.hash.length !== 0) {
         window.scrollTo(window.scrollX, window.scrollY - 60);
     }
+    if (document.getElementById("TOGGLE").getAttribute("aria-expanded") == "true") {
+        $('.navbar-collapse').collapse('hide');
+        window.scrollTo(window.scrollX, window.scrollY - 130);
+    }
+
 }
   
   // Captures click events of all <a> elements with href starting with #
@@ -20,7 +25,6 @@ $(document).on('click', 'a[href^="#"]', function(event) {
     }, 0);
 });
   
-
 function changeMode() {
     var main = document.getElementById("MAINCONTAINER");
     var sub = document.getElementById("SUBCONTAINER");
