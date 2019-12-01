@@ -111,7 +111,7 @@ a
 #HIGH
 {
     padding-left: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 #LANGS
@@ -146,4 +146,32 @@ a
 #APP
 {
     padding-left: 40px;
+}
+
+#PHOTO
+{
+    padding-left: 75px;
+}
+
+#WEBSITE
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#SITEINFO
+{
+    padding-left: 40px;
+}
+
+#MST
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#P4
+{
+    padding-left: 40px;
+    padding-bottom: 5px;
 }
