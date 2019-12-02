@@ -1,27 +1,18 @@
 $(document).ready(function(){
     setTimeout(function(){document.getElementById("jumbo").style.backgroundImage = "url(spaceblurred.jpg)";},1000);
     setTimeout(function(){document.getElementById("delayed").style.visibility = "visible";},1600);
-    // Set the offset when entering page with hash present in the url
-    window.setTimeout(offsetAnchor, 0);
 });
 
-function offsetAnchor() {
-    if (location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 60);
-    }
+function hideNavbar() {
     if (document.getElementById("TOGGLE").getAttribute("aria-expanded") == "true") {
         $('.navbar-collapse').collapse('hide');
-        window.scrollTo(window.scrollX, window.scrollY - 130);
     }
-
 }
   
   // Captures click events of all <a> elements with href starting with #
 $(document).on('click', 'a[href^="#"]', function(event) {
-    // Click events are captured before hashchanges. Timeout
-    // causes offsetAnchor to be called after the page jump.
-    window.setTimeout(function() {
-      offsetAnchor();
+   window.setTimeout(function() {
+        hideNavbar();
     }, 0);
 });
   
@@ -39,7 +30,7 @@ function changeMode() {
         main.className = "container-fluid bg-dark";
         sub.className = "col-lg-6 col-md-6 col-sm-12 col-xs-12 my-0 bg-dark text-white";
         mode.style.color = "white";
-        navColor.className = "navbar navbar-expand-md navbar-dark bg-dark sticky-top";
+        navColor.className = "navbar navbar-expand-md navbar-dark bg-dark fixed-top";
         sep1.className = "bg-white";
         sep2.className = "bg-white";
         sep3.className = "bg-white";
@@ -49,7 +40,7 @@ function changeMode() {
         main.className = "container-fluid bg-white";
         sub.className = "col-lg-6 col-md-6 col-sm-12 col-xs-12my-0 bg-white text-black";
         mode.style.color = "black";
-        navColor.className = "navbar navbar-expand-md navbar-light bg-white sticky-top";
+        navColor.className = "navbar navbar-expand-md navbar-light bg-white fixed-top";
         sep1.className = "bg-dark";
         sep2.className = "bg-dark";
         sep3.className = "bg-dark";

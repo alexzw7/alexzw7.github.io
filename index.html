@@ -13,7 +13,7 @@
     </head>
     <body>
     <!--- Navbar --->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="mainNav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container-fluid">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded = "false" id="TOGGLE">
                     <span class="navbar-toggler-icon"></span>
@@ -21,16 +21,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav"> 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#ABOUT">About Me</a>
+                            <a class="nav-link" href="#ABT">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#EDU">Education</a>
+                            <a class="nav-link" href="#EDUC">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#PROJ">Projects</a>
+                            <a class="nav-link" href="#PROJECTS">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#SKILLS">Skills</a>
+                            <a class="nav-link" href="#SKILL">Skills</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +38,7 @@
         </nav>
         <div class="jumbotron jumbotron-fluid" id="jumbo">
             <div class="container-fluid" style="visibility:hidden;" id="delayed">
-                <div class="image" style= "text-align: center;"> 
+                <div class="image" style= "text-align: center; padding-top: 60px;"> 
                     <img src="combined1.PNG" class="rounded-circle p-3" style="width: 36.5vh;" alt="Avatar">
                 </div>
                 <h1 class="display-2 text-center text-white">Hi. I'm Alex Wang:</h1>
@@ -58,12 +58,17 @@
             <div class= "container-fluid">
             <div class= "row justify-content-center">
                 <section class= "col-lg-6 col-md-12 col-sm-12 col-xs-12 my-0 bg-dark text-white" style="vertical-align: top;" id="SUBCONTAINER">
+                    <div class="cont1" style="position:relative">
+                    <a id="ABT" style="position:absolute; top:-60px;"></a>
                     <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px; padding-top: 10px;" id="ABOUT">About Me</h2>
                     <hr class = "bg-white" id="SEP1">
                     <p class="lead" style="font-size: 21px; margin-bottom: 5px;" id="ABOUTME">Hi! My name is Alex Wang. I am currently a third year student studying Computer Science at the University of Michigan. Prior to studying at Ann Arbor, I had barely written a single line of code. 
                         In fact, I barely even understood how powerful code was. However, everything changed once I arrived at Michigan. After taking the introductory programming course in my first year in college, I quickly realized that programming 
                         was, and still is, something I enjoyed doing. I find satisfaction in solving challenges through completing projects, and I have always put forth the time and
-                        effort to ensure everything I do is of high quality. Outside of programming, some of my favorite hobbies include playing video games, watching NBA and NFL games, and playing basketball and ping pong. </p>
+                        effort to ensure everything I do is of high quality. Outside of programming, some of my favorite hobbies include playing video games, watching NBA and NFL games, and playing basketball and ping pong.</p>
+                    </div>
+                    <div class="cont2" style="position:relative">
+                    <a id="EDUC" style="position:absolute; top:-60px;"></a>
                     <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px;" id="EDU">Education</h2>
                     <hr class = "bg-white" id="SEP2">
                     <div class = "row" id="UM">
@@ -81,6 +86,9 @@
                             <h2 class="h1-responsive font-weight-normal my-0 col-6 text-right" style="font-size: 23px; padding-left:0; padding-right:0;">Sept. 2013—June 2017</h2>
                     </div>
                     <p class="lead" style="font-size: 21px;" id="HIGH">Cumulutive GPA: 3.81/4.00</p>
+                    </div>
+                    <div class="cont3" style="position:relative">
+                    <a id="PROJECTS" style="position:absolute; top:-60px;"></a>
                     <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px;" id="PROJ">Projects</h2>
                     <hr class ="bg-white" id="SEP3">
                     <div class = "row" id="IOSTEAM">
@@ -112,17 +120,21 @@
                                 passing all the instructor's rigorous public and private tests and producing a top score in the class
                             </li>
                     </ul>
+                    </div>
+                    <div class="cont4" style="position:relative">
+                    <a id="SKILL" style="position:absolute; top:-60px;"></a>
                     <h2 class="h1-responsive font-weight-bold my-0" style="font-size: 27px;" id="SKILLS">Skills</h2>
                     <hr class = "bg-white" id="SEP4">
                     <h3 class="h1-responsive font-weight-bold my-0" style="font-size: 21px;" id="LANGS">Languages:</h3>
                     <p class="lead" style="font-size: 21px; padding-bottom: 0px;" id="LANGUAGES">C++, C, Python, Javascript, HTML/CSS, Java, Swift, Bash</p>
                     <h3 class="h1-responsive font-weight-bold my-0" style="font-size: 21px;" id="SOFT">Software:</h3>
                     <p class="lead" style="font-size: 21px; padding-bottom: 0px;" id="TECH">Xcode, Visual Studio, PyCharm, Git, Microsoft Office Suite</p>
+                    </div>
                 </section>
             </div>
             </div>
         </div>
-        <footer style="background-color: black; padding: 30px 0px 30px 0px;">
+        <footer style="background-color: black; padding: 30px 0px 30px 0px; margin-bottom: 0px;">
             <div class="container-fluid text-center">
                 <p class="lead" style="font-size: 20px; color: white; margin: 0px;">Copyright © 2019 Alex Wang</p>
             </div>
