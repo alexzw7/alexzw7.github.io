@@ -15,6 +15,7 @@
     width: 100%;
     overflow: hidden;
     margin: 0;
+    padding-bottom: 30px;
 }
 
 html { font-size: 1rem;}
@@ -72,6 +73,47 @@ a
 {
     text-decoration: none !important;
 }
+
+#section02 a {
+    position: relative;
+    padding-bottom: 20px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  #section02 a:hover {
+    opacity: .5;
+  }
+
+  #section02 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+  #section02 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
 
 #ABOUTME
 {
