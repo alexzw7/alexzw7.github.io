@@ -5,7 +5,6 @@
         <title>Alex Wang</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preload" href="space.jpg" as="image">
-        <link rel="preload" href="spaceblurred.jpg" as="image">
         <link rel="preload" href="combined1.PNG" as="image">
         <link href="style.css" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"rel="stylesheet">
@@ -38,18 +37,20 @@
         </nav>
         <!---Jumbotron--->
         <div class="jumbotron jumbotron-fluid" id="jumbo">
-            <div class="container-fluid" style="visibility:hidden;" id="delayed">
-                <div class="image" style= "text-align: center; padding-top: 60px;"> 
-                    <img src="combined1.PNG" class="rounded-circle p-3" style="width: 36.5vh;" alt="Avatar">
+            <div class="container-fluid">
+                <div class="container-fluid" style="opacity: 0;" id="loadFirst">
+                    <div class="image" style= "text-align: center; padding-top: 60px;"> 
+                        <img src="combined1.PNG" class="rounded-circle p-3" style="width: 36.5vh;" alt="Avatar">
+                    </div>
+                    <h1 class="display-2 text-center text-white">Hi. I&#39;m Alex Wang:</h1>
+                    <h2 class="display-5 text-center text-white" id="descrip" style="font-size: 25px;">a passionate programmer and problem solver currently living in Ann Arbor, MI.</h2>
+                    <hr class="my-4 " width= "65%" style="background-color: white; text-align:center; margin: 0 auto; height: 2px;">
+                    <div class="container-fluid" style="text-align: center; margin-top: 4vh; vertical-align: top; margin-bottom: 3.5vh;">
+                        <a href="https://github.com/alexzw7"><i class="fab fa-github" style="font-size:9vh;color:white;vertical-align: top; margin-right: 20px"></i></a>
+                        <a href="mailto:alexzw@umich.edu"><i class="fas fa-envelope" style="font-size:9vh;color:white;vertical-align: top; margin-left: 20px;"></i></a>
+                    </div>
                 </div>
-                <h1 class="display-2 text-center text-white">Hi. I&#39;m Alex Wang:</h1>
-                <h2 class="display-5 text-center text-white" id="descrip" style="font-size: 25px;">a passionate programmer and problem solver currently living in Ann Arbor, MI.</h2>
-                <hr class="my-4 " width= "65%" style="background-color: white; text-align:center; margin: 0 auto; height: 2px;">
-                <div class="container-fluid" style="text-align: center; margin-top: 4vh; vertical-align: top; margin-bottom: 3.5vh;">
-                    <a href="https://github.com/alexzw7"><i class="fab fa-github" style="font-size:9vh;color:white;vertical-align: top; margin-right: 20px"></i></a>
-                    <a href="mailto:alexzw@umich.edu"><i class="fas fa-envelope" style="font-size:9vh;color:white;vertical-align: top; margin-left: 20px;"></i></a>
-                </div>
-                <div class="container-fluid" style="padding-top: 35px; padding-bottom: 0px;">
+                <div class="container-fluid" style="opacity: 0; padding-top: 35px; padding-bottom: 0px;" id="slideButton">
                     <div id="section02" style="text-align: center; padding-left: 20px;" class="container-fluid">
                         <a href="#ABT"><span></span></a>
                     </div>
@@ -62,7 +63,7 @@
                 <a href="javascript:void(0)" onclick="javascript:changeMode()"><i class="fas fa-moon" style="font-size:4vh;color:white;" id="MODE"></i></a>                
             </div>
             <div class= "container-fluid">
-            <div class= "row justify-content-center">
+            <div class= "row justify-content-center" style="opacity: 0;" id="textBody">
                 <section class= "col-lg-6 col-md-12 col-sm-12 col-xs-12 my-0 bg-dark text-white" style="vertical-align: top;" id="SUBCONTAINER">
                     <div class="cont1" style="position:relative">
                     <a id="ABT" style="position:absolute; top:-60px;"></a>
@@ -175,7 +176,7 @@
         </footer>
     </body>
     <script src="https://kit.fontawesome.com/9dba17bb37.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="main.js"> </script>
 </html>
