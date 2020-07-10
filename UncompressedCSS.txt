@@ -180,6 +180,19 @@ a
     padding-bottom: 15px;
 }
 
+#WANDER
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#ENGINEER
+{
+    padding-left: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
 #IG
 {
     margin: 0;

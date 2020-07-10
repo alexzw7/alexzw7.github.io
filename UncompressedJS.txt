@@ -50,25 +50,28 @@ function changeMode() {
     var sep2 = document.getElementById("SEP2");
     var sep3 = document.getElementById("SEP3");
     var sep4 = document.getElementById("SEP4");
+    var sep5 = document.getElementById("SEP5");
 
     if (main.className == "container-fluid bg-white") {
         main.className = "container-fluid bg-dark";
         sub.className = "col-lg-6 col-md-6 col-sm-12 col-xs-12 my-0 bg-dark text-white";
         mode.style.color = "white";
-        navColor.className = "navbar navbar-expand-md navbar-dark bg-dark fixed-top";
+        navColor.className = "navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow";
         sep1.className = "bg-white";
         sep2.className = "bg-white";
         sep3.className = "bg-white";
         sep4.className = "bg-white";
+        sep5.className = "bg-white";
     }
     else {
         main.className = "container-fluid bg-white";
         sub.className = "col-lg-6 col-md-6 col-sm-12 col-xs-12my-0 bg-white text-black";
         mode.style.color = "black";
-        navColor.className = "navbar navbar-expand-md navbar-light bg-white fixed-top";
+        navColor.className = "navbar navbar-expand-md navbar-light bg-white fixed-top shadow";
         sep1.className = "bg-dark";
         sep2.className = "bg-dark";
         sep3.className = "bg-dark";
         sep4.className = "bg-dark";
+        sep5.className = "bg-dark";
     }
 }
