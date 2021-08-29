@@ -122,6 +122,17 @@ a
     text-indent: 40px;
 }
 
+#MS
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#SUGS
+{
+    padding-left: 40px;
+}
+
 #UM
 {
     margin: 0;
@@ -178,6 +189,19 @@ a
 {
     padding-left: 40px;
     padding-bottom: 15px;
+}
+
+#AMAZON
+{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+}
+
+#INTERN
+{
+    padding-left: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 #WANDER
