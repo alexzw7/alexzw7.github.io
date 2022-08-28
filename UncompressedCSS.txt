@@ -122,150 +122,44 @@ a
     text-indent: 40px;
 }
 
-#MS
+.dates-row 
 {
     margin: 0;
     padding: 15px 0px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#SUGS
+.indented-details
 {
     padding-left: 40px;
+    font-size: 21px;
+    padding-bottom: 0px;
+    font-weight: 300;
 }
 
-#UM
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#DEGREE
-{
-    padding-left: 40px;
-}
-
-#DELTA
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#DUAL
-{
-    padding-left: 40px;
-}
-
-#SASA
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#HIGH
+.indented-details-list
 {
     padding-left: 40px;
     padding-bottom: 5px;
     margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 300;
 }
 
-#LANGS
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#LANGUAGES
-{
-    padding-left: 40px;
-}
-
-#SOFT
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#TECH
-{
-    padding-left: 40px;
-    padding-bottom: 15px;
-}
-
-#AMAZON
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#INTERN
-{
-    padding-left: 40px;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-#WANDER
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#ENGINEER
-{
-    padding-left: 40px;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-#IG
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#CLONE
-{
-    padding-left: 40px;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-#IOSTEAM
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#APP
-{
-    padding-left: 40px;
-}
-
-#PHOTO
+.indented-sub-list
 {
     padding-left: 75px;
-}
-
-#WEBSITE
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#SITEINFO
-{
-    padding-left: 40px;
-}
-
-#MST
-{
-    margin: 0;
-    padding: 15px 0px 5px 0px;
-}
-
-#P4
-{
-    padding-left: 40px;
     padding-bottom: 5px;
     margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.section-title {
+    font-size: 27px;
+}
+
+.header-divider {
+    background-color: white;
 }
